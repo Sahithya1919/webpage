@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: none;
+    background-color: rgb(171, 187, 201);
+    background-size: 100%;
+}
+.navcontainer
+{
+    width: 100%;
+    background-color: rgb(48, 40, 29);
+    background-size: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*position: bottom;
+    overflow-x: none;*/
+    
+}
+nav
+{
+    width: 100%;
+}
+#navlist
+{
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#navlogo
+{
+    font-size: 2.8rem;
+    color: azure;
+    
+}
+a
+{
+    text-decoration: none;
+    color: azure;
+}
+#navitem
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.footerbox
+{
+    
+    background-color: rgb(48, 40, 29);
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+    
+    
+   /* margin-bottom: auto;*/
+
+}
+
+.footerbox p
+{
+    color: azure; 
+    font-size: 1.8rem;
+
+}
+
+.contentbox
+{
+    width: 90%;
+    margin: auto;
+    border: 2px solid white;
+    background-color: rgb(171, 187, 201);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+}
+
+.item
+{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightbox img
+{
+  height :400px;
+  width: 500px;
+  border-radius: 20px;
+  transition: all 0.6s 0s;
+}
+.rightbox img:hover{
+    transform:  scale(0.9);
+}
+
+.leftbox
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size: 2.5rem;
+}
+.ingbox
+{
+    font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+    .navcontainer {
+      min-height: auto; 
+    }
+    
+    #navlist {
+      font-size: 1.5rem; 
+      padding: 10px; 
+    }
+  
+    .contentbox {
+      padding: 2rem; 
+    }
+  
+    .rightbox img {
+      height: auto; 
+      width: 100%; 
+      border-radius: 0; 
+    }
+  
+    .leftbox h2 {
+      font-size: 2rem; 
+    }
+  
+    .ingbox {
+      font-size: 1.5rem;
+    }
+    #navlogo{
+        display: none;
+    }
+    #navitem{
+        
+        gap: 5px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    #navitem::before{
+        content: "HELLO FOODIES!";
+        font-size: 2rem;
+        color: azure;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        
+    }
+}
